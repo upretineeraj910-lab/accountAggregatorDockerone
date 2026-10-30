@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: bank_statement_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: bank_statement_analyzer
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - statement_network
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Python FastAPI PDF Processing Microservice
+  pdf-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.fastapi
+    container_name: bank_statement_pdf_service
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - ENABLE_OCR=true
+      - DOC_AI_PROVIDER=none
+    networks:
+      - statement_network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  # Next.js Fullstack Web Application
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.nextjs
+    container_name: bank_statement_web
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://mongodb:27017/bank_statement_analyzer
+      - MONGODB_DB_NAME=bank_statement_analyzer
+      - PDF_SERVICE_URL=http://pdf-service:8000
+      - MAX_FILE_SIZE_BYTES=26214400
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      pdf-service:
+        condition: service_started
+    networks:
+      - statement_network
+
+networks:
+  statement_network:
+    driver: bridge
+
+volumes:
+  mongo_data:
+    driver: local

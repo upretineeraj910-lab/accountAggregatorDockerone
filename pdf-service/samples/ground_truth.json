@@ -1,0 +1,208 @@
+{
+  "hdfc_sample.pdf": {
+    "bank_name": "HDFC Bank",
+    "opening_balance": 30000.0,
+    "closing_balance": 61495.0,
+    "transaction_count": 9,
+    "total_credits": 86711.0,
+    "total_debits": 55216.0,
+    "transactions": [
+      {
+        "date": "01/10/2026",
+        "description": "SALARY CREDIT TECH CORP OCT 2026",
+        "ref": "CMS92817281",
+        "debit": 0.0,
+        "credit": 85000.0,
+        "balance": 115000.0
+      },
+      {
+        "date": "03/10/2026",
+        "description": "UPI/62718291029/SWIGGY FOOD ORDER",
+        "ref": "UPI827182",
+        "debit": 640.0,
+        "credit": 0.0,
+        "balance": 114360.0
+      },
+      {
+        "date": "05/10/2026",
+        "description": "ACH/HDFC LOAN SERVICES EMI 9283",
+        "ref": "ACH827192",
+        "debit": 24500.0,
+        "credit": 0.0,
+        "balance": 89860.0
+      },
+      {
+        "date": "08/10/2026",
+        "description": "ATM WDL/HDFC BANDRA BR/ATM CASH",
+        "ref": "ATM91827",
+        "debit": 5000.0,
+        "credit": 0.0,
+        "balance": 84860.0
+      },
+      {
+        "date": "12/10/2026",
+        "description": "ELECTRICITY BESCOM OCT BILLDESK",
+        "ref": "BIL928172",
+        "debit": 2840.0,
+        "credit": 0.0,
+        "balance": 82020.0
+      },
+      {
+        "date": "15/10/2026",
+        "description": "UPI/82716253421/AMAZON INDIA REFUND",
+        "ref": "REV928172",
+        "debit": 0.0,
+        "credit": 1299.0,
+        "balance": 83319.0
+      },
+      {
+        "date": "18/10/2026",
+        "description": "SMS CHG AND ANNUAL DEBIT CARD FEE",
+        "ref": "CHG81726",
+        "debit": 236.0,
+        "credit": 0.0,
+        "balance": 83083.0
+      },
+      {
+        "date": "22/10/2026",
+        "description": "HOUSE RENT TRANSFER TO LANDLORD",
+        "ref": "NEFT92819",
+        "debit": 22000.0,
+        "credit": 0.0,
+        "balance": 61083.0
+      },
+      {
+        "date": "28/10/2026",
+        "description": "CREDIT INTEREST PD ON SAVINGS ACC",
+        "ref": "INT92817",
+        "debit": 0.0,
+        "credit": 412.0,
+        "balance": 61495.0
+      }
+    ]
+  },
+  "icici_sample.pdf": {
+    "bank_name": "ICICI Bank",
+    "opening_balance": 45000.0,
+    "closing_balance": 95771.0,
+    "transaction_count": 7,
+    "total_credits": 107000.0,
+    "total_debits": 56229.0,
+    "transactions": [
+      {
+        "date": "02/10/2026",
+        "description": "SALARY CREDIT INFOTECH SOLUTIONS OCT",
+        "ref": "NEFT10291",
+        "debit": 0.0,
+        "credit": 92000.0,
+        "balance": 137000.0
+      },
+      {
+        "date": "04/10/2026",
+        "description": "UPI/9281726354/ZEPTO GROCERIES",
+        "ref": "UPI10928",
+        "debit": 850.0,
+        "credit": 0.0,
+        "balance": 136150.0
+      },
+      {
+        "date": "06/10/2026",
+        "description": "AUTO DEBIT BAJAJ FINANCE EMI 4410",
+        "ref": "ECS10298",
+        "debit": 18200.0,
+        "credit": 0.0,
+        "balance": 117950.0
+      },
+      {
+        "date": "10/10/2026",
+        "description": "CASH DEPOSIT CDM ANDHERI WEST BR",
+        "ref": "CDM10928",
+        "debit": 0.0,
+        "credit": 15000.0,
+        "balance": 132950.0
+      },
+      {
+        "date": "14/10/2026",
+        "description": "AIRTEL BROADBAND FIBER BILLDESK",
+        "ref": "BIL10293",
+        "debit": 1179.0,
+        "credit": 0.0,
+        "balance": 131771.0
+      },
+      {
+        "date": "20/10/2026",
+        "description": "ATM CASH WITHDRAWAL ICICI KORAMANGALA",
+        "ref": "ATM10293",
+        "debit": 8000.0,
+        "credit": 0.0,
+        "balance": 123771.0
+      },
+      {
+        "date": "25/10/2026",
+        "description": "MONTHLY HOUSE RENT TO NOBROKER",
+        "ref": "NEFT10299",
+        "debit": 28000.0,
+        "credit": 0.0,
+        "balance": 95771.0
+      }
+    ]
+  },
+  "sbi_sample.pdf": {
+    "bank_name": "State Bank of India",
+    "opening_balance": 20000.0,
+    "closing_balance": 60660.0,
+    "transaction_count": 6,
+    "total_credits": 68290.0,
+    "total_debits": 27630.0,
+    "transactions": [
+      {
+        "date": "01-Oct-2026",
+        "description": "SALARY CREDIT STATE GOVT PAYROLL",
+        "ref": "SBIN10291",
+        "debit": 0.0,
+        "credit": 68000.0,
+        "balance": 88000.0
+      },
+      {
+        "date": "05-Oct-2026",
+        "description": "ACH DEBIT SBI HOME LOAN 392817",
+        "ref": "ACH10928",
+        "debit": 21500.0,
+        "credit": 0.0,
+        "balance": 66500.0
+      },
+      {
+        "date": "10-Oct-2026",
+        "description": "UPI/918273645/ZOMATO ONLINE ORDER",
+        "ref": "UPI10293",
+        "debit": 480.0,
+        "credit": 0.0,
+        "balance": 66020.0
+      },
+      {
+        "date": "15-Oct-2026",
+        "description": "NWD-ATM CASH WDL SBI MAIN BRANCH",
+        "ref": "ATM10294",
+        "debit": 4000.0,
+        "credit": 0.0,
+        "balance": 62020.0
+      },
+      {
+        "date": "20-Oct-2026",
+        "description": "ELECTRICITY BILL TNEB CHENNAI",
+        "ref": "BIL10295",
+        "debit": 1650.0,
+        "credit": 0.0,
+        "balance": 60370.0
+      },
+      {
+        "date": "28-Oct-2026",
+        "description": "CREDIT INTEREST CAPITALIZED",
+        "ref": "INT10296",
+        "debit": 0.0,
+        "credit": 290.0,
+        "balance": 60660.0
+      }
+    ]
+  }
+}
